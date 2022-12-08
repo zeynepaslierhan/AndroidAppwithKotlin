@@ -10,6 +10,8 @@
 
 Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygulamalar buna göre ayarlanmıştır.
 
+Öncesinde programlama geçmişim olduğu için kotlin öğrenirken hatırlatıcı niteliğinde olacak notlar aldım. Dolayısıyla önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip not derlemesidir. Daha detaylı bilgiler için çalıştığım yerlere bakmak isterseniz kaynakça bölümüne bakabilirsiniz. 
+
 
 ## İçindekiler
 
@@ -49,6 +51,134 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
 3. Android Studio kurulumundan sonra benim yaptığım ayarlar:
     
     
+## Kotlin Temelleri
+
+### Giriş
+
+📌 Fonksiyonlar `fun xxx()`
+
+📌 Değişkenler
+
+- `var` , `val` farklı veri tiplerini barındırabilen değişkenlerdir.  
+
+  > `val` ile tanımlanan değişkenlerin değeri sonradan değiştirilemez.
+
+📌 Veri tipleri : 
+
+- Integer türleri  : `Byte`, `Short`, `Int` ,`Long`
+- Float türleri: `Double` ,`Float`
+- Yazı türleri: `Char`,`String`
+- Dizi (Array) türleri :`ArrayList<>`,`arrayListOf()` ,`HashOf<>`,`hashMapOf<,>`,`setOf<>`, `arrayOf()`
+    
+    > String türündeki bir değişken, char veri tipi barındıran bir string olarak düşünülebilir.
+    > 
+
+📌 Veri tipleri arasında dönüştürme işlemi (Casting):
+
+```kotlin
+val int_value = 10
+val long_value = int_value.toLong()
+```
+
+### Kotlin NYP Yapısı
+
+Nesneye Yönelik Programlama hakkında daha detaylı bilgi edinmek için…
+
+📌 Sınıf (Class) yapısı oluşturulması:
+
+```kotlin
+class Car {
+  var brand = ""
+  var model = ""
+  var year = 0
+}
+```
+
+📌 İlgili sınıf için bir nesne yaratılması:
+
+```kotlin
+// c1, Car sınıfından oluşturulmuş bir nesnesin referansıdır.
+val c1 = Car()
+
+//c1 referansının tuttuğu nesnenin özelliklerine erişmek için:
+c1.brand = "Ford"
+c1.model = "Mustang"
+c1.year = 1969
+```
+
+📌 Yapıcı methodlar ile parametre şeklinde sınıf yapısının özelliklerini tanımlayabilirsiniz.
+
+```kotlin
+// 1. kullanım şekli
+class Car {
+  var brand = ""
+  var model = ""
+  var year = 0
+
+	contructor(brand : String,model :String,year : Int){
+		this.brand = brand
+		this.model = model 
+		this.year = year 
+	}
+}
+
+// 2. kullanım şekli
+class Car(var brand: String, var model: String, var year: Int)
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+}
+```
+
+📌 Sınıflara ait methodlar tanımlamak için:
+
+```kotlin
+// Car sınıfına ait drive methodu
+class Car(var brand: String, var model: String, var year: Int) {
+  // Class function
+  fun drive() {
+    println("Wrooom!")
+  }
+}
+
+// Car sınıfından üretilmiş bir nesneyle drive methoduna ulaşma
+
+fun main() {
+  val c1 = Car("Ford", "Mustang", 1969)
+  
+  // Call the function
+  c1.drive()
+}
+```
+
+📌 Sınıfların başka bir sınıftan kalıtım alması için:
+
+```kotlin
+// Kalıtım alınan sınıf : superclass, parent
+open class MyParentClass {
+  val x = 5
+}
+
+// Kalıtım alan  sınıf: subclass, child
+class MyChildClass: MyParentClass() {
+  fun myFunction() {
+    println(x) // x is now inherited from the superclass
+  }
+}
+
+// Create an object of MyChildClass and call myFunction
+fun main() {
+  val myObj = MyChildClass()
+  myObj.myFunction()
+}
+
+// OUTPUT : 5
+```
+
+
+
+
+
 
 
 
@@ -57,6 +187,7 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
 ## Kaynakça :card_file_box:
 
 1. [Kotlin İle Android Mobil Uygulama Geliştirme Eğitimi Temel Seviye , Atıl Samancıoğlu, *BTK Akademi*](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274)
+1. [Kotlin Tutorial](https://www.w3schools.com/KOTLIN/index.php)
 
 
 ---
