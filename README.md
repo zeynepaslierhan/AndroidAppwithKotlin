@@ -10,7 +10,7 @@
 
 Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygulamalar buna göre ayarlanmıştır.
 
-Öncesinde programlama geçmişim olduğu için kotlin öğrenirken hatırlatıcı niteliğinde olacak notlar aldım. Dolayısıyla önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip not derlemesidir. Daha detaylı bilgiler için çalıştığım yerlere bakmak isterseniz kaynakça bölümüne bakabilirsiniz. 
+Öncesinde programlama geçmişim olduğu için kotlin öğrenirken hatırlatıcı niteliğinde olacak notlar aldım. Dolayısıyla önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip not derlemesidir. Daha detaylı bilgiler için kaynakça bölümünden çalıştığım yerlere bakabilirsiniz. 
 
 
 ## İçindekiler
