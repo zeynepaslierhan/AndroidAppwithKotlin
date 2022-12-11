@@ -17,7 +17,7 @@ Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri v
 > :loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden]() çalıştığım yerlere bakabilirsiniz.* 
 
 1. [Temel Bilgiler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md)
-2. [Veritabanı İşlemleri]()
+2. [Veritabanı İşlemleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri)
 
 ## Projeler
 
