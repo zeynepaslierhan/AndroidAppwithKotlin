@@ -7,9 +7,11 @@
     tools:context=".MainActivity">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/textViewRecycler"
         android:layout_width="409dp"
         android:layout_height="354dp"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
