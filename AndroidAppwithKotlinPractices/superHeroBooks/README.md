@@ -43,7 +43,9 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
 
     1. **Yöntem:** Bitmap
    
-        Bitmap, bir nokta matrisinden oluşan bir dijital görüntüdür. `BitmapFactory` varolan görselleri kod içinde bitmap türünde tanımlamızı sağlar.
+        **Bitmap**, bir nokta matrisinden oluşan bir dijital görüntüdür. 
+        
+        `BitmapFactory` varolan görselleri kod içinde bitmap türünde tanımlamızı sağlar.
 
         > Varolan görsellerin kaynağına ulaşırken `applicationContext.resources` kullanılır.
 
@@ -65,7 +67,11 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
 
         ```
 
-    2. **Yöntem** Dosya dizinin kullanılması
+    2. **Yöntem** Dosya dizinin kullanılması: Örneğin batman.png resminin klasöredeki konumu integer olarak `R.drawable.batman` kodu tutar. Bu integer bir değişkene atanarak da işlemler yapılabilir. 
+
+    Böyle bir kullanım hafıza yönetimi açısından önemlidir.
+
+
 
 4. RecycleView işlemleri
 
@@ -142,6 +148,42 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
 
 📌 RecycleAdapter içerisindeki `override fun onBindViewHolder` methoduna `setOnClickListener` kodu eklenir.
  
+ ```kotlin
+  holder.itemView.setOnClickListener{
+    val intent = Intent(holder.itemView.context, PageActivity::class.java)
+    intent.putExtra("superHerosNames",superHerosList.get(position))
+
+    // Bitmap veritürlerinin aktarımı için singleton kullanıldı.
+    var singleton = SingletonClass.chosen
+    singleton.img = superHerosImgs.get(position)
+
+
+    holder.itemView.context.startActivity(intent)
+  }
+ ```
+
+📌 PageActiviy içerisinde alınan veriler, activity_page.xml'e aktarıldı. Kullanıcı arayüzünde kullanılan parçaların id değerleri ile bu işlemler yapıldı. `onCreate()` methodu içerisine yazıldı.
+
+```kotlin
+
+  // Yazının aktarılması
+  
+  val intent = intent
+  val chosenName = intent.getStringExtra("superHerosNames")
+  
+  textView.text =chosenName
+
+  // Resmin aktarılması
+
+  val chosen = SingletonClass.chosen
+  val chosenImg= chosen.img
+
+  imageView.setImageBitmap(chosenImg)
+
+```
+
+
+
 
 
 
