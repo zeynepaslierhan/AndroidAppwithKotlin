@@ -138,7 +138,15 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
     ```
 
 
+## Recycle View ile Diğer Aktivitelere Geçiş
+
+📌 RecycleAdapter içerisindeki `override fun onBindViewHolder` methoduna `setOnClickListener` kodu eklenir.
+ 
+
+
+
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/%C4%B0%C5%9FimBittiSanm%C4%B1%C5%9F%C4%B1md%C4%B1r.gif" align="right">
+
 
 ## Kaynakça :card_file_box:
 
