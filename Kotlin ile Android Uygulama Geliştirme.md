@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
   <br>
-  Kotlin ile Android Uygulaması Geliştirme
+  Kotlin ile Android Uygulama Geliştirme
   <br>
 </h1>
 
@@ -27,7 +27,11 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
  
 3. [Android Temelleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-temelleri)
 
-4. [Veritabanı İşlemleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#veritaban%C4%B1-i%CC%87%C5%9Flemleri)
+4. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-studio-1)
+	
+	1. [Klasör Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#klas%C3%B6r-yap%C4%B1s%C4%B1)
+
+5. [Veritabanı İşlemleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#veritaban%C4%B1-i%CC%87%C5%9Flemleri)
  
 	1. [Bulut Bilişim (Cloud) kullanımı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#bulut-bili%C5%9Fim-cloud-i%CC%87%C5%9Flemleri)
 
@@ -35,11 +39,7 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
 
 	2. Yerel (Local) Veritabanı
 
-5. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-studio-1)
-	
-	1. [Klasör Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#klas%C3%B6r-yap%C4%B1s%C4%B1)
-
-5. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kaynak%C3%A7a-card_file_box)
+6. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kaynak%C3%A7a-card_file_box)
 
 ## :wrench: Kurulum
 
