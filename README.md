@@ -240,6 +240,8 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
     public class MainActivity extends Activity {
     }
     ```
+
+    <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Aktivite%20ya%C5%9Fan%20d%C3%B6ng%C3%BCs%C3%BC.png" alt="Aktiviteler">
     
 - 📌 Servisler *(Services)*
     
@@ -291,6 +293,44 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 
 #### Ek Bileşenler
 
+- **Fragments**
+    
+    Activity içindeki kullanıcı arabiriminin bir bölümünü temsil eder.
+    
+- **Views**
+    
+    Düğmeler, listeler formları vb. dahil olmak üzere ekranda çizilen UI öğeleri.
+    
+- **Layouts**
+    
+    Views’lar arasındaki kontrolü sağlayan menü-panel.
+    
+- **Intents**
+    
+    Bileşenleri birbirine bağlayan mesajlar.
+    
+- **Resources**
+    
+    Dizeler, sabitler ve çekilebilir resimler gibi harici öğeler.
+    
+- **Manifest**
+    
+    Uygulama için  gerekli yapılandırma dosyası.
+    
+
+## Android Studio
+
+### Klasör yapısı
+
+<img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Android%20klas%C3%B6r%20yap%C4%B1s%C4%B1.png" alt="Andoid Studio">
+
+1. klasör, Java : Bu, projeniz için .java kaynak dosyalarını içerir. 
+2. klasör, res/drawable-hdpi: Bu, yüksek yoğunluklu ekranlar için tasarlanmış çizilebilir nesneler içindir
+3. klasör, res/layout: uygulamanızın kullanıcı arayüzünü tanımlayan dosyalar içindir.
+4. klasör, res/values: dizeler ve renk tanımları gibi bir kaynak koleksiyonu içeren diğer çeşitli XML dosyaları için bir dizindir.
+5. dosya AndroidManifest.xml: uygulamanın temel özelliklerini açıklayan ve bileşenlerinden her birini tanımlayan bildirim dosyasıdır.
+6. dosya, Build.gradle: compileSdkVersion, buildToolsVersion, applicationId, minSdkVersion, targetSdkVersion, versionCode ve versionName içeren otomatik oluşturulmuş bir dosyadır.
+
 ## Veritabanı İşlemleri
 
 ### Bulut Bilişim (Cloud) İşlemleri
@@ -305,7 +345,9 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 
 1. [Kotlin İle Android Mobil Uygulama Geliştirme Eğitimi Temel Seviye , Atıl Samancıoğlu, *BTK Akademi*](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274)
 1. [Kotlin Tutorial](https://www.w3schools.com/KOTLIN/index.php)
-
+1. [Android Tutorial](https://www.tutorialspoint.com/android/index.htm)
+1. [Nedir bu Android Service ve Broadcast Receiver](https://medium.com/kodluyoruz/nedir-bu-android-service-ve-broadcast-receiver-291168de075b)
+1. [Developer Guides | Android Developers](https://developer.android.com/guide)
 
 ---
 
