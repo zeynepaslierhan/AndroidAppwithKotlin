@@ -100,8 +100,7 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
     ```
 
     📌 xml dosyası ile ana dosyaları birbirine bağlayan Adapter sınıfının oluşturulması:
-
-    > **Recycler Adapter:** 
+   
 
     1.  📍 **Java/com.zeynepaslierhan.superherobook** klasörü içerisine kotlin sınıfı oluşturulur.
     2.  Oluşturulan sınıf aşağıdaki şekilde düzenlenir:
