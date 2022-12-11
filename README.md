@@ -35,7 +35,11 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
 
 	2. Yerel (Local) Veritabanı
 
-5. [Kaynakça :card_file_box:]()
+5. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-studio-1)
+	
+	1. [Klasör Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#klas%C3%B6r-yap%C4%B1s%C4%B1)
+
+5. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kaynak%C3%A7a-card_file_box)
 
 ## :wrench: Kurulum
 
@@ -293,27 +297,27 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 
 #### Ek Bileşenler
 
-- **Fragments**
+- 📌 **Fragments**
     
     Activity içindeki kullanıcı arabiriminin bir bölümünü temsil eder.
     
-- **Views**
+- 📌 **Views**
     
     Düğmeler, listeler formları vb. dahil olmak üzere ekranda çizilen UI öğeleri.
     
-- **Layouts**
+- 📌 **Layouts**
     
     Views’lar arasındaki kontrolü sağlayan menü-panel.
     
-- **Intents**
+- 📌 **Intents**
     
     Bileşenleri birbirine bağlayan mesajlar.
     
-- **Resources**
+- 📌 **Resources**
     
     Dizeler, sabitler ve çekilebilir resimler gibi harici öğeler.
     
-- **Manifest**
+- 📌 **Manifest**
     
     Uygulama için  gerekli yapılandırma dosyası.
     
@@ -324,12 +328,12 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 
 <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Android%20klas%C3%B6r%20yap%C4%B1s%C4%B1.png" alt="Andoid Studio">
 
-1. klasör, Java : Bu, projeniz için .java kaynak dosyalarını içerir. 
-2. klasör, res/drawable-hdpi: Bu, yüksek yoğunluklu ekranlar için tasarlanmış çizilebilir nesneler içindir
-3. klasör, res/layout: uygulamanızın kullanıcı arayüzünü tanımlayan dosyalar içindir.
-4. klasör, res/values: dizeler ve renk tanımları gibi bir kaynak koleksiyonu içeren diğer çeşitli XML dosyaları için bir dizindir.
-5. dosya AndroidManifest.xml: uygulamanın temel özelliklerini açıklayan ve bileşenlerinden her birini tanımlayan bildirim dosyasıdır.
-6. dosya, Build.gradle: compileSdkVersion, buildToolsVersion, applicationId, minSdkVersion, targetSdkVersion, versionCode ve versionName içeren otomatik oluşturulmuş bir dosyadır.
+1. klasör, **Java** : Bu, projeniz için .java kaynak dosyalarını içerir. 
+2. klasör, **res/drawable-hdpi**: Bu, yüksek yoğunluklu ekranlar için tasarlanmış çizilebilir nesneler içindir
+3. klasör, **res/layout**: uygulamanızın kullanıcı arayüzünü tanımlayan dosyalar içindir.
+4. klasör, **res/values**: dizeler ve renk tanımları gibi bir kaynak koleksiyonu içeren diğer çeşitli XML dosyaları için bir dizindir.
+5. dosya **AndroidManifest.xml**: uygulamanın temel özelliklerini açıklayan ve bileşenlerinden her birini tanımlayan bildirim dosyasıdır.
+6. dosya, **Build.gradle**: compileSdkVersion, buildToolsVersion, applicationId, minSdkVersion, targetSdkVersion, versionCode ve versionName içeren otomatik oluşturulmuş bir dosyadır.
 
 ## Veritabanı İşlemleri
 
