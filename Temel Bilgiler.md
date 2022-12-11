@@ -8,27 +8,31 @@
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/busy-cute.gif" align="right">
 
-Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygulamalar buna göre ayarlanmıştır.
-
 ## İçindekiler
 
-1. [Kurulum :wrench:]()
+1. [Kurulum :wrench:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#wrench-kurulum)
 
-	1. [JDK]()
-	2. [Android Studio]()
+	1. [JDK](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#jdk)
+	2. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#android-studio)
  
-2. [Kotlin Temelleri]()
+2. [Kotlin Temelleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#kotlin-temelleri)
 
-	1. [Giriş]()
-	2. [Kotlin NYP Yapısı]()
+	1. [Giriş](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#giri%C5%9F)
+	2. [Kotlin NYP Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#kotlin-nyp-yap%C4%B1s%C4%B1)
  
-3. [Android Temelleri]()
+3. [Android Temelleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#android-temelleri)
 
-4. [Android Studio]()
+	1. [Kütüphaneler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#k%C3%BCt%C3%BCphaneler)
+	2. [Çerçeveler *(Frameworks)*](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#%C3%A7er%C3%A7eveler-framework)
+	3. [Bileşenler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#bile%C5%9Fenler)
+		
+		1. [Ek Bileşenler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#ek-bile%C5%9Fenler)
+
+4. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#android-studio-1)
 	
-	1. [Klasör Yapısı]()
+	1. [Klasör Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#klas%C3%B6r-yap%C4%B1s%C4%B1)
 
-6. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kaynak%C3%A7a-card_file_box)
+5. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md#kaynak%C3%A7a-card_file_box)
 
 ## :wrench: Kurulum
 
