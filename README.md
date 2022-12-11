@@ -16,8 +16,11 @@ Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygula
 ## İçindekiler
 
 1. Kurulum :wrench:
-1. Android Studio Arayüzü
 1. Kotlin Temelleri
+1. Android Temelleri
+1. Veritabanı İşlemleri
+1.1. Bulut Bilişim (Cloud) kullanımı
+1.2. Yerel (Local) Veritabanı
 1. Kaynakça :card_file_box:
 
 ## :wrench: Kurulum
@@ -175,10 +178,14 @@ fun main() {
 // OUTPUT : 5
 ```
 
+## Android Temelleri
 
 
+## Veritabanı İşlemleri
 
+### Bulut Bilişim (Cloud) İşlemleri
 
+#### Firebase
 
 
 
