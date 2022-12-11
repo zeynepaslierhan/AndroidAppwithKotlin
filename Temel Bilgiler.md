@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
   <br>
-  Kotlin ile Android Uygulama Geliştirme
+  Temel Bilgiler
   <br>
 </h1>
 
@@ -10,34 +10,23 @@
 
 Windows ortamında Kotlin ile Android geliştirdiğim için kurulumlar ve uygulamalar buna göre ayarlanmıştır.
 
-Öncesinde programlama geçmişim olduğu için kotlin öğrenirken hatırlatıcı niteliğinde olacak notlar aldım. Dolayısıyla önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip not derlemesidir. Daha detaylı bilgiler için kaynakça bölümünden çalıştığım yerlere bakabilirsiniz. 
-
-
 ## İçindekiler
 
-1. [Kurulum :wrench:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#wrench-kurulum)
+1. [Kurulum :wrench:]()
 
-	1. [JDK](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#jdk)
-	2. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-studio)
+	1. [JDK]()
+	2. [Android Studio]()
  
-2. [Kotlin Temelleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kotlin-temelleri)
+2. [Kotlin Temelleri]()
 
-	1. [Giriş](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#giri%C5%9F)
-	2. [Kotlin NYP Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kotlin-nyp-yap%C4%B1s%C4%B1)
+	1. [Giriş]()
+	2. [Kotlin NYP Yapısı]()
  
-3. [Android Temelleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-temelleri)
+3. [Android Temelleri]()
 
-4. [Android Studio](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#android-studio-1)
+4. [Android Studio]()
 	
-	1. [Klasör Yapısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#klas%C3%B6r-yap%C4%B1s%C4%B1)
-
-5. [Veritabanı İşlemleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#veritaban%C4%B1-i%CC%87%C5%9Flemleri)
- 
-	1. [Bulut Bilişim (Cloud) kullanımı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#bulut-bili%C5%9Fim-cloud-i%CC%87%C5%9Flemleri)
-
-		1. [Firebase](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#firebase)
-
-	2. Yerel (Local) Veritabanı
+	1. [Klasör Yapısı]()
 
 6. [Kaynakça :card_file_box:](https://github.com/zeynepaslierhan/AndroidAppwithKotlin#kaynak%C3%A7a-card_file_box)
 
@@ -334,13 +323,6 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 4. klasör, **res/values**: dizeler ve renk tanımları gibi bir kaynak koleksiyonu içeren diğer çeşitli XML dosyaları için bir dizindir.
 5. dosya **AndroidManifest.xml**: uygulamanın temel özelliklerini açıklayan ve bileşenlerinden her birini tanımlayan bildirim dosyasıdır.
 6. dosya, **Build.gradle**: compileSdkVersion, buildToolsVersion, applicationId, minSdkVersion, targetSdkVersion, versionCode ve versionName içeren otomatik oluşturulmuş bir dosyadır.
-
-## Veritabanı İşlemleri
-
-### Bulut Bilişim (Cloud) İşlemleri
-
-#### Firebase
-
 
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/%C4%B0%C5%9FimBittiSanm%C4%B1%C5%9F%C4%B1md%C4%B1r.gif" align="right">
