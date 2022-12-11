@@ -18,6 +18,8 @@ RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana 
 
 ## Recycle View Nasıl Kullanılır?
 
+<img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/BazenBen2.gif" height= "90" align="right">
+
 > :rotating_light: **NOT:** `id 'kotlin-android-extensions'` kod satırının build.gradle içerisindeki plungins'de olduğundan ve sonrasında `import kotlinx.android.synthetic.main....` kütüphanesi eklediğinizde bir sıkıntı olmadığından emin olun. :bangbang:
 
 1. activity_main.xml dosyasına Recycle View eklenip id değeri verildi.
