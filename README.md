@@ -21,7 +21,11 @@ Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri v
 
 ## Projeler
 
+> Projelerin kendilerine ait Readme.md dosyalarında: projenin yapılışı, kullanılan araçların ne olduğu, nelere dikkat edilmesi gerektiği.. vb bilgiler yer almaktadır. 
 
+1. [Super Hero Books / Practices 1](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks)
+
+  **AMAÇ:** RecycleView kullanımı.
 
 
 
