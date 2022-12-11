@@ -2,7 +2,7 @@
   <br>
   <a href="https://github.com/zeynepaslierhan/.NetCoreArchive"><img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/Logo.png" alt="SoftwareDeveloperArchive" width="200"></a>
   <br>
-  Kotlin ile Android Uygulama Geliştirme
+  Veritabanı İşlemleri
   <br>
 </h1>
 
@@ -12,6 +12,6 @@
 
 1. Bulut Bilişim *(Cloud)*
 
-  1. Firebase
+   1. Firebase
   
 2. Yerel *(Local)* Veritabanı
