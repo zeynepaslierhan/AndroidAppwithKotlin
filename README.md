@@ -8,13 +8,11 @@
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/BanaBenziyor.gif" align="right">
 
-Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri ve yaptığım pratikleri inceleyebilirsiniz. 
-
-> Windows ortamında geliştirilen projelerdir.
+Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri ve yaptığım pratikleri inceleyebilirsiniz. 
 
 ## Notlar
 
-> :loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden]() çalıştığım yerlere bakabilirsiniz.* 
+:loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden]() çalıştığım yerlere bakabilirsiniz.* 
 
 1. [Temel Bilgiler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md)
     
@@ -34,15 +32,15 @@ Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri v
 
 ## Projeler
 
-> Projelerin kendilerine ait Readme.md dosyalarında: projenin yapılışı, kullanılan araçların ne olduğu, nelere dikkat edilmesi gerektiği.. vb bilgiler yer almaktadır. 
+Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, karşılaştığım hatalar, nelere dikkat edilmesi gerektiği.. vb** bilgiler yer almaktadır.
 
 1. [Super Hero Books / Practices 1](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks)
 
-  **AMAÇ:** RecycleView kullanımı.
+    ***AMAÇ:** RecycleView kullanımı.*
 
+2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="20">  Firebase / Practices 2](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
 
-
-
+    ***AMAÇ:** Firebase işlemleri.*
 
 
 
@@ -55,6 +53,8 @@ Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri v
 1. [Android Tutorial](https://www.tutorialspoint.com/android/index.htm)
 1. [Nedir bu Android Service ve Broadcast Receiver](https://medium.com/kodluyoruz/nedir-bu-android-service-ve-broadcast-receiver-291168de075b)
 1. [Developer Guides | Android Developers](https://developer.android.com/guide)
+1. [Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye, Atıl Samancıoğlu, *BTK Akademi*](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-ileri-seviye-10359)
+1. [Firebase Docs](https://firebase.google.com/docs/android/setup#kotlin+ktx_2)
 
 ---
 
