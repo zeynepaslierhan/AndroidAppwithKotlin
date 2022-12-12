@@ -25,6 +25,23 @@
 
 ### <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" align="center" height="40"> Firebase
 
+📌 **Firebase**; mobil ve web uygulamaları oluşturmak için geliştirilmiş ve cloud hizmetleri sunan bir platformdur. 
+
+📌 **Cloud Firestore**; istemci/sunucu(client server) tarafı geliştirme için verileri depolamak ve eşitlemek için bulutta barındırılan bir NoSQL veritabanıdır. Verilerinizi koleksiyonlar halinde düzenlenmiş belgelerde saklar.
+
+<img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase2.png" align="left" height="100">
+
+Cloud Firestore'un NoSQL veri modelini izleyerek verileri, değerlerle eşlenen alanlar içeren belgelerde depolarsınız. Bu belgeler, verilerinizi düzenlemek ve sorgular oluşturmak için kullanabileceğiniz belgeleriniz için kapsayıcı olan koleksiyonlarda depolanır.Belgeler, basit dizeler ve sayılardan karmaşık, iç içe nesnelere kadar birçok farklı veri türünü destekler. Ayrıca belgeler içinde alt koleksiyonlar oluşturabilir ve veritabanınız büyüdükçe ölçeklenen hiyerarşik veri yapıları oluşturabilirsiniz.
+
+
+Oluşturduğunuz android projesinin firebase entegrasyonu için:
+
+1. [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAnNacBhDvARIsABnDa69Z_v3xzsE3ugkUlnoXrPS7WPRxYb0uEn_evQZAZMg9dQqH52z1E4UaAuLNEALw_wcB&gclsrc=aw.ds) sayfasından yeni bir proje oluşturun. 
+2. Oluşturduğunuz proje içerisinden android uygulamsını seçin
+3. Firebase dokümantasyonunu takip edin.
+
+*Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [photoSharingAppwithFirebase / Android Practices 2 🎬]() projesinin youtube videosuna bakabilirsiniz.* 
+
 
 ## Yerel *(Local)* Veritabanı
 
@@ -33,6 +50,7 @@
 
 1. [Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye, Atıl Samancıoğlu](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-ileri-seviye-10359)
 1. [Developer Guides | Android Developers](https://developer.android.com/guide)
+2. [Firebase docs](https://firebase.google.com/docs?gclid=CjwKCAjwg5uZBhATEiwAhhRLHqsAsuiwESHGtqxBz9KNG5a2oD-aRbJTDKExD2bnCLMQb0TMejKg2RoChRMQAvD_BwE&gclsrc=aw.ds)
 
 ---
 
