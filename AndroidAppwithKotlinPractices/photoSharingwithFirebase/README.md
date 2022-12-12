@@ -34,6 +34,11 @@ Takip edilen adımlar:
    > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
 
 5. [Firebase Authentication](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-authentication-i%C5%9Flemleri) işlemleri yapıldı. 
+6. Menu eklendi. FeedActivity kısmından eklenen yeni menu için fonksiyonlar override edildi.
+   
+   📍 res/menu oluşturuldu. İçerisine yeni menu dosyası oluşturuldu. İstenilen logOut ve Share Photo seçenekleri yeni menuye eklendi.
+
+
 
 ## Kullanıcı Arayüz Çalışması
 
