@@ -12,7 +12,16 @@
 
 ## Proje Yapılış Aşamaları
 
-### <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase İşlemleri
+Takip edilen adımlar:
+
+1. [Firebase](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#-firebase-i%CC%87%C5%9Flemleri) bağlantısı ve ekstra gereken Authentication, Cloud Firestore, Cloud Storage kütüphaneleri eklendi.
+2. [activity_main.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1), login sayfası olarak tasarlandı
+3. feedActivity adında boş bir aktivite oluşturuldu.
+4. [activity_feed.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1) dosyası düzenlendi. 
+   
+   > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
+
+## <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase İşlemleri
 
 1. Firebase bağlantısı yapıldı. [*(Firebase nedir? Firebase Bağlantısı nasıl yapılır? gibi sorular için Veritabanı işlemleri notuma bakabilirsiniz..)*](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md)
 2. [Firebase kütüphanelerinden](https://firebase.google.com/docs/android/setup#kotlin+ktx_2) ihtiyaç duyulan: Authentication, Cloud Firestore, Cloud Storage kütüphaneleri 📍 build.gradle(app)'daki `dependencies` kısmına eklendi.
@@ -26,9 +35,11 @@
     }
     ```
 
-### Kullanıcı Arayüz Çalışması
+## Kullanıcı Arayüz Çalışması
 
 1. Login işlemi için activity_main.xml düzenlendi.
+
+    <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/photoSharingWithFirebase/LoginView.png" height="150">
 
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/%C4%B0%C5%9FimBittiSanm%C4%B1%C5%9F%C4%B1md%C4%B1r.gif" align="right">
