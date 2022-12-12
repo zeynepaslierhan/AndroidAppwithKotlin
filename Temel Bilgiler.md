@@ -44,25 +44,22 @@
 
 2. JDK kurulumu olduktan sonra java çalıştığı exe dosyasının path’i alınır. Bunun için java’nın kurulduğu klasörde “java.exe” dosyası aranır. Örneğin benim dosya düzenime göre java.exe’nin path’i `C:\Program Files\Java\jdk-19\bin\java.exw`, dolayısıla bulunduğu klasör → `C:\Program Files\Java\jdk-19\bin`
     
-   
+   <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/kurulum/java%20path.gif" height="300">
+
     
 3. Bilgisayarın java.exe’yi çalıştırması için hangi konumda olduğunu bilmesi gerekiyor. Bunun için java.exe’nin olduğu klasörün path’i aşağıdaki konuma eklenir: 
     
     :round_pushpin: Bilgisayar özellikleri → Gelişmiş seçenekler → Çevresel Değişkenler → Sistem değişkenleri → Path
     
+    <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/kurulum/JDK.gif" height="300">
+    
     
     
 ### Android Studio
 
-1. [Android Studio sayfasından](https://developer.android.com/studio) indirilir.
+1. [Android Studio sayfasından](https://developer.android.com/studio) indirilip kurulur.  
     
-   
-    
-2. İndirilen dosya kurulur.
-    
-   
-    
-3. Android Studio kurulumundan sonra benim yaptığım ayarlar:
+2. Android Studio kurulumunda custom seçeneğini seçerek devam edip hiçbir ayarı değiştirmeden kurdum.
     
     
 ## Kotlin Temelleri
