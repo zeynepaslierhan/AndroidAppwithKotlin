@@ -29,28 +29,52 @@
 
 📌 **Cloud Firestore**; istemci/sunucu(client server) tarafı geliştirme için verileri depolamak ve eşitlemek için bulutta barındırılan bir NoSQL veritabanıdır. Verilerinizi koleksiyonlar halinde düzenlenmiş belgelerde saklar.
 
-<img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase2.png" align="left" height="100">
+<img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase2.png" align="left" height="130">
 
 Cloud Firestore'un NoSQL veri modelini izleyerek verileri, değerlerle eşlenen alanlar içeren belgelerde depolarsınız. Bu belgeler, verilerinizi düzenlemek ve sorgular oluşturmak için kullanabileceğiniz belgeleriniz için kapsayıcı olan koleksiyonlarda depolanır.Belgeler, basit dizeler ve sayılardan karmaşık, iç içe nesnelere kadar birçok farklı veri türünü destekler. Ayrıca belgeler içinde alt koleksiyonlar oluşturabilir ve veritabanınız büyüdükçe ölçeklenen hiyerarşik veri yapıları oluşturabilirsiniz.
 
+</br>
+
+#### Firebase Bağlantısı
 
 Oluşturduğunuz android projesinin firebase entegrasyonu için:
+
+> *Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [XXXXXXXXX🎬]() projesinin youtube videosuna bakabilirsiniz.* 
 
 1. [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAnNacBhDvARIsABnDa69Z_v3xzsE3ugkUlnoXrPS7WPRxYb0uEn_evQZAZMg9dQqH52z1E4UaAuLNEALw_wcB&gclsrc=aw.ds) sayfasından yeni bir proje oluşturun. 
 2. Oluşturduğunuz proje içerisinden android uygulamasını seçin
 3. Firebase dokümantasyonunu takip edin.
    1. Projenin packages ismini girin
    2. İsteğe bağlı olarak:
+
+     </br>
    
-   *  Nickname: build.gradle(app) kısmından `applicationId`
+   * :bookmark:  Nickname: 📍 build.gradle(app) kısmından `applicationId`
+
+   </br>
+   
+   <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase%20ba%C4%9Flant%C4%B1s%C4%B1/Nickname.gif" height="300">
   
-   *  Singing Sertificate SHA-1: Grandle/android/singingreport 
+   </br>
+   
+   * :bookmark:  Singing Sertificate SHA-1: 📍 Grandle/android/singingreport 
 
-   🚨 Gradle kısmı built edilmiyorsa File->Sync Projects  with Gradle files seçeneğine tıklayın
+    </br>
 
-*Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [XXXXXXXXX🎬]() projesinin youtube videosuna bakabilirsiniz.* 
+   <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase%20ba%C4%9Flant%C4%B1s%C4%B1/SHA1.gif" height="300">
 
-🚨 <project>build.gradle içerisine `allprojects` eklemenize izin vermiyorsa settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
+ </br>
+ 
+ 
+ :bangbang: **Karşılaşabileceğiniz Durumlar** :bangbang:
+
+1. 🚨 **Gradle kısmı built edilmiyorsa**  📍 File->Sync Projects  with Gradle files seçeneğine tıklayın
+   
+      <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase%20ba%C4%9Flant%C4%B1s%C4%B1/Sync%20Grandle.gif" height="300">
+
+</br>
+
+1. 🚨 <project>build.gradle içerisine `allprojects` **eklemenize izin vermiyorsa**  📍 settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
 
 
 ## Yerel *(Local)* Veritabanı
