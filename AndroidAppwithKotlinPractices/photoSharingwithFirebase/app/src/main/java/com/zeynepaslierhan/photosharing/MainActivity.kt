@@ -38,5 +38,23 @@ class MainActivity : AppCompatActivity() {
 
     fun login(view:View){
 
+        val email = EmailText.text.toString()
+        val password = PasswordText.text.toString()
+
+        auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
+            if(task.isSuccessful){
+
+                val user = auth.currentUser?.email.toString()
+
+                Toast.makeText(this,"Welcome: ${user}",Toast.LENGTH_LONG).show()
+
+                val intent =Intent(this,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener{exception->
+            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
     }
 }
