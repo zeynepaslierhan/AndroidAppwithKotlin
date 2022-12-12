@@ -150,6 +150,11 @@ Oluşturduğunuz android projesinin firebase entegrasyonu için:
             finish()
         }
 ```
+  
+📌 Çıkış Yapma
+```kotlin  
+  auth.signOut()
+```
 
 ## Yerel *(Local)* Veritabanı
 
