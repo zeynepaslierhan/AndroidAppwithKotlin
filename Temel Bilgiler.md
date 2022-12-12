@@ -293,10 +293,14 @@ Android; mobil cihazlar için açık kaynaklı ve Linux tabanlı bir işletim si
 - 📌 **Fragments**
     
     Activity içindeki kullanıcı arabiriminin bir bölümünü temsil eder.
+
+    <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Fragment2.png" alt="Fragments">
     
 - 📌 **Views**
     
     Düğmeler, listeler formları vb. dahil olmak üzere ekranda çizilen UI öğeleri.
+
+    <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Fragment1.png" alt="Views">
     
 - 📌 **Layouts**
     
