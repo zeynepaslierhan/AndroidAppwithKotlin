@@ -26,6 +26,9 @@
     }
     ```
 
+### Kullanıcı Arayüz Çalışması
+
+1. Login işlemi için activity_main.xml düzenlendi.
 
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/%C4%B0%C5%9FimBittiSanm%C4%B1%C5%9F%C4%B1md%C4%B1r.gif" align="right">
