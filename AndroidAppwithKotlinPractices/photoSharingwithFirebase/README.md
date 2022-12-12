@@ -38,6 +38,11 @@ Takip edilen adımlar:
    
    📍 res/menu oluşturuldu. İçerisine yeni menu dosyası oluşturuldu. İstenilen logOut ve Share Photo seçenekleri yeni menuye eklendi.
 
+7. activity_sharePhoto düzenlendi
+8. Telefon hafızanını okumak için izin istendi. Bunun için 📍 manifest klasöründeki dosya düzenlendi.
+   ```kotlin
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+   ```
 
 
 ## Kullanıcı Arayüz Çalışması
