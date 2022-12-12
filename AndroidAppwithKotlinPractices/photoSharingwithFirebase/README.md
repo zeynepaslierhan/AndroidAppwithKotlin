@@ -17,9 +17,80 @@ Takip edilen adımlar:
 1. [Firebase](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#-firebase-i%CC%87%C5%9Flemleri) bağlantısı ve ekstra gereken Authentication, Cloud Firestore, Cloud Storage kütüphaneleri eklendi.
 2. [activity_main.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1), login sayfası olarak tasarlandı
 3. feedActivity adında boş bir aktivite oluşturuldu.
-4. [activity_feed.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1) dosyası düzenlendi. 
+4. activity_feed.xml dosyası düzenlendi. 
    
    > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
+
+5. [Firebase Authentication](https://firebase.google.com/docs/auth/android/start) işlemleri yapıldı. 
+
+    📌Kullanılacak referans değer sınıf içerisinde tanımlandı
+    ```kotlin
+    // global değişken tanımlandı
+
+    private lateinit var auth:FirebaseAuth
+
+    // Aktivite'nin onCreate() fonksiyonu içerisinde auth'a değer atandı
+
+    auth = FirebaseAuth.getInstance()
+    ```
+
+    📌 Login işlemi:
+    ```kotlin
+    fun login(view:View){
+
+        val email = EmailText.text.toString()
+        val password = PasswordText.text.toString()
+
+        auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
+            if(task.isSuccessful){
+
+                val user = auth.currentUser?.email.toString()
+
+                Toast.makeText(this,"Welcome: ${user}",Toast.LENGTH_LONG).show()
+
+                val intent =Intent(this,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener{exception->
+            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
+    }
+    ```
+
+    📌 Kayıt olma işlemi yapıldı:
+    ```kotlin
+
+    fun register(view: View){
+
+        val email = EmailText.text.toString()
+        val password = PasswordText.text.toString()
+
+        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task->
+            if(task.isSuccessful){
+                val intent = Intent(this,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener{exception->
+            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
+     }
+
+    ```
+
+    📌 Güncel kullanıcı bilgilerinin hatırlanması için aktivitenin onCreate() fonksiyonu içerisine aşağıdaki kod bloğu eklendi:
+    
+    ```kotlin
+        val user = auth.currentUser
+        if(user!=null){
+            val intent =Intent(this,FeedActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+    ```
 
 ## <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase İşlemleri
 

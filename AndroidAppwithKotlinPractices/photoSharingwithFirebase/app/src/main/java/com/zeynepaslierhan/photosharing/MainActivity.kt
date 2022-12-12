@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         auth = FirebaseAuth.getInstance()
+
+        val user = auth.currentUser
+        if(user!=null){
+            val intent =Intent(this,FeedActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
     fun register(view: View){
