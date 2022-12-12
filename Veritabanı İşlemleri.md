@@ -37,10 +37,20 @@ Cloud Firestore'un NoSQL veri modelini izleyerek verileri, değerlerle eşlenen 
 Oluşturduğunuz android projesinin firebase entegrasyonu için:
 
 1. [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAnNacBhDvARIsABnDa69Z_v3xzsE3ugkUlnoXrPS7WPRxYb0uEn_evQZAZMg9dQqH52z1E4UaAuLNEALw_wcB&gclsrc=aw.ds) sayfasından yeni bir proje oluşturun. 
-2. Oluşturduğunuz proje içerisinden android uygulamsını seçin
+2. Oluşturduğunuz proje içerisinden android uygulamasını seçin
 3. Firebase dokümantasyonunu takip edin.
+   1. Projenin packages ismini girin
+   2. İsteğe bağlı olarak:
+   
+   *  Nickname: build.gradle(app) kısmından `applicationId`
+  
+   *  Singing Sertificate SHA-1: Grandle/android/singingreport 
 
-*Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [photoSharingAppwithFirebase / Android Practices 2 🎬]() projesinin youtube videosuna bakabilirsiniz.* 
+   🚨 Gradle kısmı built edilmiyorsa File->Sync Projects  with Gradle files seçeneğine tıklayın
+
+*Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [XXXXXXXXX🎬]() projesinin youtube videosuna bakabilirsiniz.* 
+
+🚨 <project>build.gradle içerisine `allprojects` eklemenize izin vermiyorsa settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
 
 
 ## Yerel *(Local)* Veritabanı
