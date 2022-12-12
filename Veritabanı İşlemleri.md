@@ -74,7 +74,7 @@ Oluşturduğunuz android projesinin firebase entegrasyonu için:
 
 </br>
 
-1. 🚨 <project>build.gradle içerisine `allprojects` **eklemenize izin vermiyorsa**  📍 settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
+2. 🚨 <project>build.gradle içerisine `allprojects` **eklemenize izin vermiyorsa**  📍 settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
 
 
 ## Yerel *(Local)* Veritabanı
