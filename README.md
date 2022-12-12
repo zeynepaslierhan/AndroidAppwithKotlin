@@ -28,6 +28,10 @@ Bu repoda Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri v
     
 2. [Veritabanı İşlemleri](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md)
 
+    - ☁️ Bulut Bilişim (Cloud)
+
+        - Firebase
+
 ## Projeler
 
 > Projelerin kendilerine ait Readme.md dosyalarında: projenin yapılışı, kullanılan araçların ne olduğu, nelere dikkat edilmesi gerektiği.. vb bilgiler yer almaktadır. 
