@@ -13,6 +13,10 @@
 1. [ :cloud: Bulut Bilişim *(Cloud)* ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#bulut-bili%C5%9Fim-cloud-cloud)
 
    1. [Firebase](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#-firebase)
+    
+      * Giriş
+      * Firebase Bağlantısı
+      * Authentication İşlemleri
   
 2. [Yerel *(Local)* Veritabanı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#yerel-local-veritaban%C4%B1)
 
@@ -76,6 +80,76 @@ Oluşturduğunuz android projesinin firebase entegrasyonu için:
 
 2. 🚨 <project>build.gradle içerisine `allprojects` **eklemenize izin vermiyorsa**  📍 settings.gradle içerisindeki repositoriesMode ayarının `repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)` şeklinde ayarlayın.
 
+  
+#### Firebase Authentication işlemleri
+  
+📌Kullanılacak referans değer sınıf içerisinde tanımlandı
+```kotlin
+    // global değişken tanımlandı
+
+    private lateinit var auth:FirebaseAuth
+
+    // Aktivite'nin onCreate() fonksiyonu içerisinde auth'a değer atandı
+
+    auth = FirebaseAuth.getInstance()
+```
+
+📌 Login işlemi:
+```kotlin
+    fun login(view:View){
+
+        val email = EmailText.text.toString()
+        val password = PasswordText.text.toString()
+
+        auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
+            if(task.isSuccessful){
+
+                val user = auth.currentUser?.email.toString()
+
+                Toast.makeText(this,"Welcome: ${user}",Toast.LENGTH_LONG).show()
+
+                val intent =Intent(this,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener{exception->
+            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
+    }
+```
+
+📌 Kayıt olma işlemi yapıldı:
+```kotlin
+
+    fun register(view: View){
+
+        val email = EmailText.text.toString()
+        val password = PasswordText.text.toString()
+
+        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task->
+            if(task.isSuccessful){
+                val intent = Intent(this,FeedActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }.addOnFailureListener{exception->
+            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
+        }
+
+     }
+
+```
+  
+📌 Güncel kullanıcı bilgilerinin hatırlanması için aktivitenin onCreate() fonksiyonu içerisine aşağıdaki kod bloğu eklendi:
+```kotlin
+        val user = auth.currentUser
+        if(user!=null){
+            val intent =Intent(this,FeedActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+```
 
 ## Yerel *(Local)* Veritabanı
 
