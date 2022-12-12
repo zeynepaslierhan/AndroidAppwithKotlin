@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         val user = auth.currentUser
         if(user!=null){
+            val usermail = user.email.toString()
+            Toast.makeText(this,"Welcome: ${usermail}",Toast.LENGTH_LONG).show()
+
             val intent =Intent(this,FeedActivity::class.java)
             startActivity(intent)
             finish()

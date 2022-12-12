@@ -21,76 +21,8 @@ Takip edilen adımlar:
    
    > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
 
-5. [Firebase Authentication](https://firebase.google.com/docs/auth/android/start) işlemleri yapıldı. 
+5. [Firebase Authentication](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-authentication-i%C5%9Flemleri) işlemleri yapıldı. 
 
-    📌Kullanılacak referans değer sınıf içerisinde tanımlandı
-    ```kotlin
-    // global değişken tanımlandı
-
-    private lateinit var auth:FirebaseAuth
-
-    // Aktivite'nin onCreate() fonksiyonu içerisinde auth'a değer atandı
-
-    auth = FirebaseAuth.getInstance()
-    ```
-
-    📌 Login işlemi:
-    ```kotlin
-    fun login(view:View){
-
-        val email = EmailText.text.toString()
-        val password = PasswordText.text.toString()
-
-        auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task->
-            if(task.isSuccessful){
-
-                val user = auth.currentUser?.email.toString()
-
-                Toast.makeText(this,"Welcome: ${user}",Toast.LENGTH_LONG).show()
-
-                val intent =Intent(this,FeedActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-        }.addOnFailureListener{exception->
-            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
-        }
-
-    }
-    ```
-
-    📌 Kayıt olma işlemi yapıldı:
-    ```kotlin
-
-    fun register(view: View){
-
-        val email = EmailText.text.toString()
-        val password = PasswordText.text.toString()
-
-        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener { task->
-            if(task.isSuccessful){
-                val intent = Intent(this,FeedActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-        }.addOnFailureListener{exception->
-            Toast.makeText(applicationContext,exception.localizedMessage,Toast.LENGTH_LONG).show()
-        }
-
-     }
-
-    ```
-
-    📌 Güncel kullanıcı bilgilerinin hatırlanması için aktivitenin onCreate() fonksiyonu içerisine aşağıdaki kod bloğu eklendi:
-    
-    ```kotlin
-        val user = auth.currentUser
-        if(user!=null){
-            val intent =Intent(this,FeedActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-    ```
 
 ## <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase İşlemleri
 
