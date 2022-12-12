@@ -10,24 +10,13 @@
 
 <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase çalışması için yapılmış, orta seviye android uygulama geliştirme projesidir. [Atıl Samancıoğlu'nun BTK akademi'de verdiği eğitimdeki](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274) proje baz alınarak çalışılmıştır.
 
+[*📢Firebase hakkında detaylı bilgi için Veritabanı İşlemleri notunu inceleyebilirsiniz.*](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md)
+
 ## Proje Yapılış Aşamaları
 
 Takip edilen adımlar:
 
-1. [Firebase](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#-firebase-i%CC%87%C5%9Flemleri) bağlantısı ve ekstra gereken Authentication, Cloud Firestore, Cloud Storage kütüphaneleri eklendi.
-2. [activity_main.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1), login sayfası olarak tasarlandı
-3. feedActivity adında boş bir aktivite oluşturuldu.
-4. activity_feed.xml dosyası düzenlendi. 
-   
-   > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
-
-5. [Firebase Authentication](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-authentication-i%C5%9Flemleri) işlemleri yapıldı. 
-
-
-## <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase İşlemleri
-
-1. Firebase bağlantısı yapıldı. [*(Firebase nedir? Firebase Bağlantısı nasıl yapılır? gibi sorular için Veritabanı işlemleri notuma bakabilirsiniz..)*](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md)
-2. [Firebase kütüphanelerinden](https://firebase.google.com/docs/android/setup#kotlin+ktx_2) ihtiyaç duyulan: Authentication, Cloud Firestore, Cloud Storage kütüphaneleri 📍 build.gradle(app)'daki `dependencies` kısmına eklendi.
+1. [Firebase bağlantısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-ba%C4%9Flant%C4%B1s%C4%B1) ve ekstra gereken Authentication, Cloud Firestore, Cloud Storage kütüphaneleri 📍 build.gradle(app)'daki `dependencies` kısmına eklendi.
 
     ```kotlin
     dependencies {
@@ -37,6 +26,14 @@ Takip edilen adımlar:
         implementation 'com.google.firebase:firebase-storage-ktx'
     }
     ```
+
+2. [activity_main.xml](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase#kullan%C4%B1c%C4%B1-aray%C3%BCz-%C3%A7al%C4%B1%C5%9Fmas%C4%B1), login sayfası olarak tasarlandı
+3. feedActivity adında boş bir aktivite oluşturuldu.
+4. activity_feed.xml dosyası düzenlendi. 
+   
+   > 📢 *Bu kısımda recycleView kullanıldı. RecycleView Kullanımının detaylı açıklaması için ["super hero books" projesini](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks) inceleyebilirsiniz.*
+
+5. [Firebase Authentication](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-authentication-i%C5%9Flemleri) işlemleri yapıldı. 
 
 ## Kullanıcı Arayüz Çalışması
 
