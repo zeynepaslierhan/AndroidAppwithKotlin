@@ -28,7 +28,7 @@ Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri 
 
     - ☁️ Bulut Bilişim (Cloud)
 
-        - Firebase
+        - <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17"> Firebase *(Bağlantısı, Authentication..vb)*
 
 ## Projeler
 
@@ -38,7 +38,7 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 
     ***AMAÇ:** RecycleView kullanımı.*
 
-2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="20">  Firebase / Practices 2](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
+2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17">  Firebase / Practices 2](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
 
     ***AMAÇ:** Firebase işlemleri.*
 
