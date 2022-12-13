@@ -102,40 +102,40 @@ Takip edilen adımlar:
 10. Cloud Storage ve Cloud Firestore ayarları yapıldı. Firestore console üzerinden kural değişikliği yapıldı.
 11. Veritabanına seçilen görseli kaydetmek için:
 
-📌 Sınıfa ait değişkenler tanımlandı.
+    📌 Sınıfa ait değişkenler tanımlandı.
 
-```kotlin
-    private lateinit var storage: FirebaseStorage
-    private lateinit var auth: FirebaseAuth
-    private lateinit var database: FirebaseFirestore
-```
+    ```kotlin
+        private lateinit var storage: FirebaseStorage
+        private lateinit var auth: FirebaseAuth
+        private lateinit var database: FirebaseFirestore
+    ```
 
-📌 Aktivite oluştuğunda, tanımlanan değişkenlere değerler atandı.
+    📌 Aktivite oluştuğunda, tanımlanan değişkenlere değerler atandı.
 
-```kotlin
-    storage = FirebaseStorage.getInstance()
-    auth= FirebaseAuth.getInstance()
-    database= FirebaseFirestore.getInstance()
-```
-📌 Fotograflar veritabanına kaydedildi.
+    ```kotlin
+        storage = FirebaseStorage.getInstance()
+        auth= FirebaseAuth.getInstance()
+        database= FirebaseFirestore.getInstance()
+    ```
+    📌 Fotograflar veritabanına kaydedildi.
 
-```kotlin
-    fun Share(view: View){
+    ```kotlin
+        fun Share(view: View){
 
-        val uuid = UUID.randomUUID()
-        val ımgName = "${uuid}.jpg"
+            val uuid = UUID.randomUUID()
+            val ımgName = "${uuid}.jpg"
 
-        val reference = storage.reference
+            val reference = storage.reference
 
-        val ımgRef = reference.child("images",).child(ımgName)
+            val ımgRef = reference.child("images",).child(ımgName)
 
-        if(chosenImg != null){
-            ımgRef.putFile(chosenImg!!).addOnSuccessListener { taskSnapshot ->
-                println("Upload Succesfull")
+            if(chosenImg != null){
+                ımgRef.putFile(chosenImg!!).addOnSuccessListener { taskSnapshot ->
+                    println("Upload Succesfull")
+                }
             }
-        }
-    }   
-```
+        }   
+    ```
 
 
 ## Kullanıcı Arayüz Çalışması
