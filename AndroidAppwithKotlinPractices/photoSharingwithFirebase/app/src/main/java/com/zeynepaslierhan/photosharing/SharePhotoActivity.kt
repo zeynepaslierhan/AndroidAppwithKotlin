@@ -14,20 +14,43 @@ import android.provider.MediaStore
 import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.activity_share_photo.*
+import java.util.UUID
 
 class SharePhotoActivity : AppCompatActivity() {
 
     var chosenImg : Uri?=null
-
     var chosenBitmap : Bitmap?=null
+
+    private lateinit var storage: FirebaseStorage
+    private lateinit var auth: FirebaseAuth
+    private lateinit var database: FirebaseFirestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_share_photo)
+        storage = FirebaseStorage.getInstance()
+        auth= FirebaseAuth.getInstance()
+        database= FirebaseFirestore.getInstance()
     }
 
     fun Share(view: View){
+
+        val uuid = UUID.randomUUID()
+        val ımgName = "${uuid}.jpg"
+
+        val reference = storage.reference
+
+        val ımgRef = reference.child("images",).child(ımgName)
+
+        if(chosenImg != null){
+            ımgRef.putFile(chosenImg!!).addOnSuccessListener { taskSnapshot ->
+                println("Upload Succesfull")
+            }
+        }
 
     }
 

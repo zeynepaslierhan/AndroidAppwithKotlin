@@ -45,59 +45,96 @@ Takip edilen adımlar:
    ```
 9. sharePhotoActivity içerisine, galeriden fotograf seçilebilemesi için aşağıdaki kodlar eklendi:
 
-📌 Gerekli izinler alındıysa galeriye yönlendirilir.
+    📌 Gerekli izinler alındıysa galeriye yönlendirilir.
 
-```kotlin
+    ```kotlin
 
-fun SelectImg(view:View) {
-        if(ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE )!= PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),1)
-        }else{
-            val ımages = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-            startActivityForResult(ımages,2)
-        }
-    }
-
-```
-
-📌Gerekli iznin verilip verilmediği durumların sonuçları için:
-
-```kotlin
-override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        if(requestCode==1){
-            if(grantResults.size>0&&grantResults[0] == PackageManager.PERMISSION_GRANTED){
+    fun SelectImg(view:View) {
+            if(ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE )!= PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE),1)
+            }else{
                 val ımages = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                 startActivityForResult(ımages,2)
             }
         }
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-    }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    ```
 
-        if(requestCode==2&&resultCode== RESULT_OK && data!=null){
-            chosenImg = data.data
+    📌Gerekli iznin verilip verilmediği durumların sonuçları için:
 
-            if(chosenImg != null){
-
-                if(Build.VERSION.SDK_INT >= 28){
-                    val source = ImageDecoder.createSource(this.contentResolver,chosenImg!!)
-                    chosenBitmap = ImageDecoder.decodeBitmap(source)
-                    SelectView.setImageBitmap(chosenBitmap)
-                }else{
-                    chosenBitmap = MediaStore.Images.Media.getBitmap(this.contentResolver,chosenImg)
-                    SelectView.setImageBitmap(chosenBitmap)
+    ```kotlin
+    override fun onRequestPermissionsResult(
+            requestCode: Int,
+            permissions: Array<out String>,
+            grantResults: IntArray
+        ) {
+            if(requestCode==1){
+                if(grantResults.size>0&&grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    val ımages = Intent(Intent.ACTION_PICK,MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+                    startActivityForResult(ımages,2)
                 }
+            }
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        }
 
+        override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
+            if(requestCode==2&&resultCode== RESULT_OK && data!=null){
+                chosenImg = data.data
+
+                if(chosenImg != null){
+
+                    if(Build.VERSION.SDK_INT >= 28){
+                        val source = ImageDecoder.createSource(this.contentResolver,chosenImg!!)
+                        chosenBitmap = ImageDecoder.decodeBitmap(source)
+                        SelectView.setImageBitmap(chosenBitmap)
+                    }else{
+                        chosenBitmap = MediaStore.Images.Media.getBitmap(this.contentResolver,chosenImg)
+                        SelectView.setImageBitmap(chosenBitmap)
+                    }
+
+                }
+            }
+            super.onActivityResult(requestCode, resultCode, data)
+        }
+
+    ```
+10. Cloud Storage ve Cloud Firestore ayarları yapıldı. Firestore console üzerinden kural değişikliği yapıldı.
+11. Veritabanına seçilen görseli kaydetmek için:
+
+📌 Sınıfa ait değişkenler tanımlandı.
+
+```kotlin
+    private lateinit var storage: FirebaseStorage
+    private lateinit var auth: FirebaseAuth
+    private lateinit var database: FirebaseFirestore
+```
+
+📌 Aktivite oluştuğunda, tanımlanan değişkenlere değerler atandı.
+
+```kotlin
+    storage = FirebaseStorage.getInstance()
+    auth= FirebaseAuth.getInstance()
+    database= FirebaseFirestore.getInstance()
+```
+📌 Fotograflar veritabanına kaydedildi.
+
+```kotlin
+    fun Share(view: View){
+
+        val uuid = UUID.randomUUID()
+        val ımgName = "${uuid}.jpg"
+
+        val reference = storage.reference
+
+        val ımgRef = reference.child("images",).child(ımgName)
+
+        if(chosenImg != null){
+            ımgRef.putFile(chosenImg!!).addOnSuccessListener { taskSnapshot ->
+                println("Upload Succesfull")
             }
         }
-        super.onActivityResult(requestCode, resultCode, data)
-    }
-
+    }   
 ```
 
 
