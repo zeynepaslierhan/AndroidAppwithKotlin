@@ -1,4 +1,3 @@
-@file:Suppress("DEPRECATION")
 
 package com.zeynepaslierhan.photosharing
 
@@ -6,13 +5,16 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.graphics.ImageDecoder
 import android.net.Uri
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_share_photo.*
 
 class SharePhotoActivity : AppCompatActivity() {
 
@@ -55,7 +57,20 @@ class SharePhotoActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
 
         if(requestCode==2&&resultCode== RESULT_OK && data!=null){
-            data.data
+            chosenImg = data.data
+
+            if(chosenImg != null){
+
+                if(Build.VERSION.SDK_INT >= 28){
+                    val source = ImageDecoder.createSource(this.contentResolver,chosenImg!!)
+                    chosenBitmap = ImageDecoder.decodeBitmap(source)
+                    SelectView.setImageBitmap(chosenBitmap)
+                }else{
+                    chosenBitmap = MediaStore.Images.Media.getBitmap(this.contentResolver,chosenImg)
+                    SelectView.setImageBitmap(chosenBitmap)
+                }
+
+            }
         }
         super.onActivityResult(requestCode, resultCode, data)
     }
