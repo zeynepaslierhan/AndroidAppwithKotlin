@@ -28,7 +28,7 @@ Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri 
 
     - ☁️ Bulut Bilişim (Cloud)
 
-        - Firebase
+        - <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17"> Firebase *(Bağlantısı, Authentication..vb)*
 
 ## Projeler
 
@@ -38,7 +38,7 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 
     ***AMAÇ:** RecycleView kullanımı.*
 
-2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="20">  Firebase / Practices 2](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
+2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17">  Firebase / Practices 2](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
 
     ***AMAÇ:** Firebase işlemleri.*
 
@@ -55,6 +55,7 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 1. [Developer Guides | Android Developers](https://developer.android.com/guide)
 1. [Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye, Atıl Samancıoğlu, *BTK Akademi*](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-ileri-seviye-10359)
 1. [Firebase Docs](https://firebase.google.com/docs/android/setup#kotlin+ktx_2)
+1. [İstenilen aktivitenin çalıştırılması veya ana erkana çağrılması](https://stackoverflow.com/questions/38308161/how-to-run-a-certain-activity-in-android-studio)
 
 ---
 
