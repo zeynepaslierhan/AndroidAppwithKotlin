@@ -38,7 +38,7 @@ Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri 
 
 <a href="https://www.youtube.com/watch?v=giIfb04lcpc&ab_channel=SoftwareDeveloperArchive"><img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/youtube/Practices%201.jpg" align="left" height="75"> </a>
 
-<a href=""><img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/youtube/Practices%202.jpg" align="left" height="75"> </a>
+<a href="https://www.youtube.com/watch?v=lRVqH66BF7Y&feature=youtu.be"><img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/youtube/Practices%202.jpg" align="left" height="75"> </a>
 
 </br>
 </br>
