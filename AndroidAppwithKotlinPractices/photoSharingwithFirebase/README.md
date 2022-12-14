@@ -10,6 +10,8 @@
 
 <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="30"> Firebase çalışması için yapılmış, orta seviye android uygulama geliştirme projesidir. [Atıl Samancıoğlu'nun BTK akademi'de verdiği eğitimdeki](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274) proje baz alınarak çalışılmıştır.
 
+***Projenin nasıl yapıldığını incelemek için [Software Developer Archive youtube kanalımdan 🎬](https://www.youtube.com/watch?v=lRVqH66BF7Y&ab_channel=SoftwareDeveloperArchive) videoyu izleyebilirsiniz..***
+
 [*📢Firebase hakkında detaylı bilgi için Veritabanı İşlemleri notunu inceleyebilirsiniz.*](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md)
 
 ## Proje Yapılış Aşamaları
