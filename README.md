@@ -57,7 +57,7 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17">  Firebase / Practices 2, 💻 *kodlar..* ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
 
     ***AMAÇ:** Firebase işlemleri.*
-    [*Nasıl yapıldığını izlemek için...🎬*]()
+    [*Nasıl yapıldığını izlemek için...🎬*](https://www.youtube.com/watch?v=lRVqH66BF7Y&ab_channel=SoftwareDeveloperArchive)
 
 
 
