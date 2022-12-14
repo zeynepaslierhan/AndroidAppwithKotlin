@@ -14,7 +14,7 @@ Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri 
 
 ## Notlar
 
-:loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden]() çalıştığım yerlere bakabilirsiniz.* 
+:loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/README.md#kaynak%C3%A7a-card_file_box) çalıştığım yerlere bakabilirsiniz.* 
 
 1. [Temel Bilgiler](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Temel%20Bilgiler.md)
     
