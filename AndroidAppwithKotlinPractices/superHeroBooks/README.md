@@ -8,15 +8,17 @@
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/BanaBenziyor.gif" align="right">
 
-Recycle View Çalışması için yapılmış, başlangıç seviyesinde android uygulama geliştirme projesidir. [Atıl Samancıoğlu'nun BTK akademi'de verdiği eğitimdeki](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274) proje baz alınarak çalışılmıştır.
+RecyclerView Çalışması için yapılmış, başlangıç seviyesinde android uygulama geliştirme projesidir. [Atıl Samancıoğlu'nun BTK akademi'de verdiği eğitimdeki](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274) proje baz alınarak çalışılmıştır.
 
-## Recycle View Nedir?
+***Projenin nasıl yapıldığını incelemek için [Software Developer Archive youtube kanalımdan 🎬](https://www.youtube.com/watch?v=giIfb04lcpc&ab_channel=SoftwareDeveloperArchive) videoyu izleyebilirsiniz..***
+
+## RecyclerView Nedir?
 
 RecyclerView; verilerin adapter kullanılarak listelenmesini sağlar.
 
 RecyclerView, ListView gibi uygulama ayağa kalktığında tüm verileri ekrana çizerek listeleme yapmaz. RecyclerView listenin ekrana sığacak kadar elemanını ekrana çizer. 
 
-## Recycle View Nasıl Kullanılır?
+## RecyclerView Nasıl Kullanılır?
 
 <img src="https://github.com/zeynepaslierhan/zeynepaslierhan/blob/main/img/gifs/BazenBen2.gif" height= "90" align="right">
 
