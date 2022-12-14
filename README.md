@@ -10,6 +10,8 @@
 
 Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri ve yaptığım pratikleri inceleyebilirsiniz. 
 
+[Software Developer Archive youtube kanalımdaki seriden 🎬](https://www.youtube.com/playlist?list=PLjMBQHLzNCzZmz7N8XyQUSL36VBYI_prz) Kotlin ile Android Uygulaması projelerimin nasıl yapıldığını inceleyebilirsiniz.
+
 ## Notlar
 
 :loudspeaker: *Önceden programlama geçmişi olan biri için öğretici, kotlin bilen biri için hatırlatıcı niteliğe sahip notlardır. Daha detaylı bilgiler için [kaynakça bölümünden]() çalıştığım yerlere bakabilirsiniz.* 
