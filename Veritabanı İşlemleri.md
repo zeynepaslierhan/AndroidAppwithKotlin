@@ -43,7 +43,7 @@ Cloud Firestore'un NoSQL veri modelini izleyerek verileri, değerlerle eşlenen 
 
 Oluşturduğunuz android projesinin firebase entegrasyonu için:
 
-> *Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [XXXXXXXXX🎬]() projesinin youtube videosuna bakabilirsiniz.* 
+> *Bu kısmı kendi projelerimde nasıl yaptığımı incelemek isterseniz [Photo Sharing with Firebase🎬]() projesinin youtube videosuna bakabilirsiniz.* 
 
 1. [Firebase](https://firebase.google.com/?gclid=Cj0KCQiAnNacBhDvARIsABnDa69Z_v3xzsE3ugkUlnoXrPS7WPRxYb0uEn_evQZAZMg9dQqH52z1E4UaAuLNEALw_wcB&gclsrc=aw.ds) sayfasından yeni bir proje oluşturun. 
 2. Oluşturduğunuz proje içerisinden android uygulamasını seçin
