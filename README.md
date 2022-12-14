@@ -48,13 +48,13 @@ Bu repodan Kotlin ile Android uygulama geliştirirken ihtiyacım olan bilgileri 
 
 Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, karşılaştığım hatalar, nelere dikkat edilmesi gerektiği.. vb** bilgiler yer almaktadır.
 
-1. [Super Hero Books / Practices 1 💻 ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks)
+1. [Super Hero Books / Practices 1, 💻 *kodlar..* ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/superHeroBooks)
 
     ***AMAÇ:** RecycleView kullanımı.* 
     [*Nasıl yapıldığını izlemek için...🎬*](https://www.youtube.com/watch?v=giIfb04lcpc)
     
 
-2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17">  Firebase / Practices 2 💻 ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
+2. [Photo Sharing with  <img src="https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/img/Firebase.png" height="17">  Firebase / Practices 2, 💻 *kodlar..* ](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/tree/main/AndroidAppwithKotlinPractices/photoSharingwithFirebase)
 
     ***AMAÇ:** Firebase işlemleri.*
     [*Nasıl yapıldığını izlemek için...🎬*]()
