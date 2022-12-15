@@ -76,6 +76,7 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 1. [How to Support ALL Screen Sizes on Android](https://www.youtube.com/watch?v=5lSQcJjZPFs)
 2. [How to Retrieve Image from Firebase in Realtime in Android?](https://www.geeksforgeeks.org/how-to-retrieve-image-from-firebase-in-realtime-in-android/)
 3. [Play Audio Song firebase Storage in Android Studio Tutorial](https://www.youtube.com/watch?v=DxZMDSKNG1A)
+4. [Build a Tic Tac Toe Game in Android Studio - Online Mode | GeeksforGeeks](https://www.youtube.com/watch?v=-GmU5fSyeV0)
 
 ---
 
