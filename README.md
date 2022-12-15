@@ -74,6 +74,8 @@ Projelerin kendilerine ait Readme.md dosyalarında: **projenin yapılışı, kar
 1. [Firebase Docs](https://firebase.google.com/docs/android/setup#kotlin+ktx_2)
 1. [İstenilen aktivitenin çalıştırılması veya ana erkana çağrılması](https://stackoverflow.com/questions/38308161/how-to-run-a-certain-activity-in-android-studio)
 1. [How to Support ALL Screen Sizes on Android](https://www.youtube.com/watch?v=5lSQcJjZPFs)
+2. [How to Retrieve Image from Firebase in Realtime in Android?](https://www.geeksforgeeks.org/how-to-retrieve-image-from-firebase-in-realtime-in-android/)
+3. [Play Audio Song firebase Storage in Android Studio Tutorial](https://www.youtube.com/watch?v=DxZMDSKNG1A)
 
 ---
 
