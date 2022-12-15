@@ -18,7 +18,7 @@
 
 Takip edilen adımlar:
 
-1. [Firebase bağlantısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-ba%C4%9Flant%C4%B1s%C4%B1) ve ekstra gereken Authentication, Cloud Firestore, Cloud Storage kütüphaneleri 📍 build.gradle(app)'daki `dependencies` kısmına eklendi.
+1. [Firebase bağlantısı](https://github.com/zeynepaslierhan/AndroidAppwithKotlin/blob/main/Veritaban%C4%B1%20%C4%B0%C5%9Flemleri.md#firebase-ba%C4%9Flant%C4%B1s%C4%B1) ve ekstra gereken [Authentication, Cloud Firestore, Cloud Storage kütüphaneleri](https://firebase.google.com/docs/android/setup) 📍 build.gradle(app)'daki `dependencies` kısmına eklendi.
 
     ```kotlin
     dependencies {
